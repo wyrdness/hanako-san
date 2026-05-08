@@ -1,8 +1,8 @@
 {
   "meta": {
-    "version": "1.0.0",
+    "version": "1.1.0",
     "schema_version": "1.0.0",
-    "last_updated": "2026-02-13",
+    "last_updated": "2026-05-07",
     "repository": "https://github.com/wyrdness/hanako-san",
     "maintainers": [
       {
@@ -16,111 +16,244 @@
       "content": "CC-BY-4.0"
     }
   },
+
   "phenomenon": {
     "id": "hanako-san",
-    "name": "Hanako-san (花子さん)",
-    "aliases": [],
-    "category": "OF_ORIGIN_STORIES:",
-    "subcategory": "Location-bound spirit (school bathrooms)",
+    "name": "Hanako-san",
+    "aliases": [
+      { "name": "Toire no Hanako-san", "language": "Japanese", "region": "Japan", "meaning": "Hanako of the Toilet" },
+      { "name": "トイレの花子さん", "language": "Japanese (kanji/kana)", "region": "Japan" },
+      { "name": "Hanako-san of the Toilet", "language": "English", "meaning": "Common English rendering" }
+    ],
+    "category": "GHOST_HAUNTING",
+    "subcategory": "School yokai / urban legend ghost",
     "tags": [
-      "folklore",
-      "mythology"
+      "ghost",
+      "yokai",
+      "yurei",
+      "urban-legend",
+      "japan",
+      "school",
+      "child-spirit",
+      "ritual-summoning"
     ],
     "status": "documented",
     "description": {
-      "summary": "Hanako-san (花子さん), meaning \\\"Miss Hanako,\\\" is Japan's most famous school ghost and one of the most widespread urban legends among Japanese children.",
-      "full": "Hanako-san (花子さん), meaning \\\"Miss Hanako,\\\" is Japan's most famous school ghost and one of the most widespread urban legends among Japanese children. She is typically described as the spirit of a young girl who haunts school bathrooms, specifically appearing in the third stall from the entrance when summoned through a specific ritual. Despite variations in her backstory and appearance across different schools and regions, certain elements remain remarkably consistent: her manifestation in school restrooms, her red skirt, her association with the number three, and the ritual required to summon her."
+      "summary": "Hanako-san is a Japanese school ghost said to inhabit the third stall of the third-floor girls' bathroom and to answer when summoned with a specific knocking ritual. She is one of the most widely circulated school-based urban legends in modern Japan.",
+      "full": "Hanako-san (花子さん, 'Miss Hanako'), commonly called Toire no Hanako-san ('Hanako of the Toilet'), is a Japanese yokai/yurei tied to school bathrooms. She is described as the spirit of a young girl with a bobbed haircut and a red skirt or dress who haunts a particular stall — usually the third stall of the third-floor girls' restroom — and can be summoned by knocking three times on the door and asking 'Are you there, Hanako-san?' If she answers, consequences in different versions range from a bloody hand pulling the questioner into the toilet, to being dragged to Hell, to encountering a three-headed lizard. Folklorists trace the schoolyard legend to roughly the 1950s; it became a national cultural fixture during the Japanese kokkuri/yokai boom of the late 1980s and the school-horror media wave of the 1990s. There is no canonical origin story: variants attribute her death to a WWII air raid during a game of hide-and-seek, to murder by a parent or stranger, or to bullying-driven suicide. The legend is closely associated with children's storytelling games and 'school seven mysteries' (gakkō no nana fushigi) traditions."
     },
     "etymology": {
-      "origin": "Japanese (Post-WWII urban legend)",
-      "meaning": "To be documented",
-      "first_use": "Unknown"
+      "origin": "Japanese post-war schoolyard urban legend; the name 'Hanako' is a generic, common Japanese girl's name often used in folklore and exemplar contexts (analogous to English 'Jane Doe').",
+      "meaning": "'Hanako' (花子) literally 'flower child'; 'Toire no Hanako-san' translates as 'Hanako of the Toilet'.",
+      "first_use": "Documented in Japanese schoolyard folklore by the 1950s; widely popularized nationally in the late 1980s."
     }
   },
+
   "classification": {
     "taxonomy": {
-      "category": "OF_ORIGIN_STORIES:",
-      "type": "Location-bound spirit (school bathrooms)",
-      "subtype": "Unknown",
-      "variant": "Unknown"
+      "category": "GHOST_HAUNTING",
+      "type": "Location-bound ghost (toilet ghost)",
+      "subtype": "School yokai / yurei",
+      "variant": "Japanese urban legend"
     },
-    "related_phenomena": []
+    "related_phenomena": [
+      { "id": "kashima-reiko", "name": "Kashima Reiko", "relationship": "similar", "description": "Japanese legless ghost likewise associated with bathrooms and a question-and-answer ritual" },
+      { "id": "aka-manto", "name": "Aka Manto (Red Cape)", "relationship": "similar", "description": "Japanese bathroom-stall ghost who poses a deadly choice between red or blue paper" },
+      { "id": "kuchisake-onna", "name": "Kuchisake-onna", "relationship": "related", "description": "Slit-mouthed woman urban legend in the same modern-Japanese yokai cycle" },
+      { "id": "hasshaku-sama", "name": "Hasshaku-sama", "relationship": "related", "description": "Modern Japanese internet-era ghost legend targeting children" },
+      { "id": "bloody-mary", "name": "Bloody Mary", "relationship": "counterpart", "description": "Western mirror-summoning ghost, structurally analogous as a ritual-invocation school ghost" }
+    ]
   },
+
   "characteristics": {
     "physical": {
-      "features": [],
-      "morphology": "See README.md for detailed physical description"
+      "height": { "min": 1.2, "max": 1.5, "unit": "meters", "confidence": "low" },
+      "coloration": ["white skin", "red skirt or dress", "black hair"],
+      "features": [
+        { "feature": "Bobbed black hair", "description": "A short, blunt-cut hairstyle typical of schoolgirls of an earlier era", "frequency": "common" },
+        { "feature": "Red skirt or dress", "description": "A distinguishing red garment, sometimes specifically a red skirt or one-piece, in nearly all tellings", "frequency": "always" },
+        { "feature": "Pale or ghostly appearance", "description": "Described variably as a pallid, sickly child or an outright bloody apparition depending on version", "frequency": "common" },
+        { "feature": "Schoolgirl form", "description": "Appears as a young girl roughly elementary-school age", "frequency": "always" }
+      ],
+      "morphology": "Appears as a small girl in old-style schoolwear; specific facial features are rarely described in the core legend, with emphasis on the red skirt and association with the third stall."
     },
-    "abilities": [],
+    "abilities": [
+      { "ability": "Ritual response", "description": "Answers verbally when called via the three-knock ritual at the third stall of the third-floor girls' toilet", "frequency": "always", "evidence_level": "folklore" },
+      { "ability": "Pulling victims into toilet", "description": "In some variants a bloody hand emerges to pull the questioner into the toilet bowl or to Hell", "frequency": "occasional", "evidence_level": "folklore" },
+      { "ability": "Manifestation of a three-headed lizard", "description": "In some regional variants, summoning instead produces a giant three-headed lizard that devours the questioner", "frequency": "rare", "evidence_level": "folklore" }
+    ],
     "behavior": {
-      "activity_period": "unknown",
-      "disposition": "unknown",
-      "habitat_preference": []
+      "activity_period": "variable",
+      "disposition": "variable",
+      "social_structure": "solitary",
+      "habitat_preference": ["school bathrooms", "third-floor girls' restroom", "third stall"],
+      "diet": "Not applicable (spirit)",
+      "patterns": [
+        "Bound to a specific stall, typically the third stall of a third-floor girls' restroom",
+        "Appears only in response to the summoning ritual",
+        "Does not pursue victims outside the bathroom in most variants",
+        "Closely tied to children's storytelling games at school"
+      ]
     }
   },
+
   "distribution": {
     "range": {
-      "description": "Japanese (Post-WWII urban legend)",
-      "continents": [],
-      "countries": [],
-      "regions": []
+      "description": "Japan-wide schoolyard urban legend, with regional variants in nearly every prefecture. The legend has been exported through anime, manga, films, and the global creepypasta and J-horror communities.",
+      "continents": ["Asia"],
+      "countries": ["Japan"],
+      "regions": [
+        "Kantō (including Tokyo)",
+        "Kansai",
+        "Hokkaidō",
+        "Kyūshū"
+      ]
     },
     "hotspots": [],
     "temporal": {
       "first_recorded": {
-        "date": "Unknown",
+        "date": "1950",
         "circa": true,
-        "source": "Traditional folklore"
-      }
+        "source": "Folklorist Matthew Meyer; widely accepted earliest stratum of the legend"
+      },
+      "peak_activity_periods": [
+        { "period": "1980s late–1990s", "description": "National peak as part of the Japanese school-horror boom; widespread schoolyard transmission and inclusion in 'school seven mysteries' compilations" },
+        { "period": "1995–1998", "description": "Live-action film adaptations brought Hanako-san into mass-market J-horror" },
+        { "period": "2014–present", "description": "Renewed popularity through the manga and anime Toilet-Bound Hanako-kun (Jibaku Shōnen Hanako-kun)" }
+      ],
+      "seasonal_patterns": "Most strongly transmitted during school terms and at children's summer kimodameshi (test-of-courage) events."
     }
   },
+
   "history": {
     "origins": {
-      "cultural_roots": "Japanese (Post-WWII urban legend)",
-      "earliest_accounts": "See README.md for historical details",
-      "folklore_connections": "Unknown"
+      "cultural_roots": "Post-war Japanese schoolyard folklore, drawing on older Japanese traditions of toilet kami (kawaya-no-kami) and yurei tied to specific places.",
+      "earliest_accounts": "Folklorists place the legend's earliest stratum in the 1950s, transmitted orally among schoolchildren before being systematically documented in the 1980s.",
+      "folklore_connections": "Belongs to the broader Japanese genre of gakkō no kaidan ('school ghost stories') and gakkō no nana fushigi ('seven mysteries of the school'), and to a global cluster of child-summoning ghost legends that includes Bloody Mary."
     },
-    "timeline": []
+    "timeline": [
+      { "date": "1950-01-01", "event": "Earliest stratum of the Hanako-san schoolyard legend, per folklorist Matthew Meyer", "significance": "Establishes the legend as a postwar phenomenon", "source": "Meyer, Matthew, 'Hanako-san of the Toilet'" },
+      { "date": "1980-01-01", "event": "Hanako-san spreads broadly through schoolyards as part of the late-1980s yokai/kokkuri-san boom", "significance": "Transition from local oral tradition to nationally recognized children's legend", "source": "Foster, Michael Dylan, The Book of Yokai (2015)" },
+      { "date": "1995-07-15", "event": "Live-action film Toire no Hanako-san directed by Joji Matsuoka released in Japan", "significance": "First major mainstream cinematic treatment; portrayed Hanako sympathetically", "source": "Japanese film databases" },
+      { "date": "1998-01-01", "event": "Shinsei Toire no Hanako-san directed by Yukihiko Tsutsumi released, depicting a vengeful Hanako", "significance": "Cemented Hanako-san as a horror genre icon", "source": "Japanese film databases" },
+      { "date": "2014-01-01", "event": "AidaIro begins serialization of Jibaku Shōnen Hanako-kun ('Toilet-Bound Hanako-kun')", "significance": "Reframes the legend with a male protagonist and launches a major modern franchise", "source": "Square Enix / Monthly GFantasy" },
+      { "date": "2020-01-01", "event": "Anime adaptation of Toilet-Bound Hanako-kun by studio Lerche premieres", "significance": "Brings the legend to a global audience through streaming platforms", "source": "Lerche / Funimation" }
+    ],
+    "modern_era": "Hanako-san remains a fixture of Japanese popular culture, with continued treatment in horror cinema, manga, anime, video games, and idol culture. Folklorists treat her as a paradigmatic example of how oral schoolyard tradition transitions into mass-media legend, and she is frequently invoked as a case study in modern Japanese yokai studies."
   },
+
   "sightings": {
     "statistics": {
       "total_documented": 0,
       "verified": 0,
       "disputed": 0,
-      "debunked": 0
+      "debunked": 0,
+      "date_range": { "earliest": "1950", "latest": "2026" }
     },
     "notable": [],
     "database_path": "./sightings/"
   },
+
   "evidence": {
     "physical": [],
     "photographic": [],
     "video": [],
     "audio": [],
-    "trace": []
+    "trace": [],
+    "documentary": [
+      {
+        "id": "hanako-evidence-folklore-corpus",
+        "type": "folklore corpus",
+        "name": "Schoolyard oral tradition (Japan, 1950s–present)",
+        "description": "Continuous oral and written tradition of Hanako-san stories transmitted by Japanese schoolchildren and documented by folklorists from the 1980s onward.",
+        "status": "unverified",
+        "analysis": "Treated by folklorists (Foster, Meyer, Komatsu) as a paradigmatic modern Japanese urban legend rather than a paranormal claim. Variation by region is well documented.",
+        "source": "Foster (2015); Meyer (yokai.com)"
+      }
+    ]
   },
+
   "theories": {
-    "paranormal": [],
+    "paranormal": [
+      {
+        "name": "Bound spirit (jibakurei)",
+        "description": "Within the legend's own logic, Hanako-san is a jibakurei — a spirit bound to the location of her death (a school toilet) and unable to leave it.",
+        "proponents": ["Traditional Japanese folk belief"],
+        "evidence_cited": ["Consistent localization to a single bathroom stall across regional variants"]
+      }
+    ],
     "scientific": [],
-    "skeptical": []
+    "skeptical": [
+      {
+        "name": "Modern urban legend / folkloric construct",
+        "description": "Folklorists treat Hanako-san as a modern urban legend whose form was shaped by postwar Japanese schoolyard culture, the kokkuri/yokai boom of the 1980s, and subsequent mass-media adaptation. No claim of literal existence is made by scholarly sources.",
+        "proponents": ["Michael Dylan Foster", "Matthew Meyer", "Komatsu Kazuhiko"],
+        "evidence_cited": ["High regional variability of the legend", "Documented diffusion via children's social networks and media", "Structural parallels with Bloody Mary and Aka Manto"]
+      },
+      {
+        "name": "Cautionary children's narrative",
+        "description": "The legend functions as a self-imposed test of courage and a way of marking certain school spaces as 'liminal' or off-limits, paralleling the social functions of other school-bound ghost stories.",
+        "proponents": ["Folklore studies (Japan)"],
+        "evidence_cited": ["Use in kimodameshi games", "Inclusion in 'seven mysteries of the school' frameworks"]
+      }
+    ]
   },
+
   "cultural": {
     "folklore": {
-      "traditions": [],
-      "stories": [],
-      "beliefs": "See README.md for cultural context"
+      "traditions": [
+        "Gakkō no kaidan (school ghost stories)",
+        "Gakkō no nana fushigi (seven mysteries of the school)",
+        "Kimodameshi (test of courage) games"
+      ],
+      "stories": [
+        "Three-knock summoning ritual at the third stall of the third-floor girls' toilet",
+        "Bloody hand emerging from the toilet to pull the questioner inside",
+        "Three-headed lizard variant in some regions",
+        "Hanako as a benevolent ghost (1995 film treatment)",
+        "Hanako as a vengeful ghost (1998 film treatment)"
+      ],
+      "beliefs": "Predominantly treated as a children's game-legend rather than a sincere ghost belief; nonetheless, Hanako-san is widely recognized across Japan as a stock supernatural figure of the school setting."
     },
     "popular_culture": {
-      "literature": [],
-      "film_tv": [],
-      "games": [],
-      "other": []
+      "literature": [
+        "Hanako and the Terror of Allegory — Sakae Esuno (manga)",
+        "Toilet-Bound Hanako-kun (Jibaku Shōnen Hanako-kun) — AidaIro (manga, 2014–)"
+      ],
+      "film_tv": [
+        "Toire no Hanako-san (1995) — directed by Joji Matsuoka",
+        "Shinsei Toire no Hanako-san (1998) — directed by Yukihiko Tsutsumi",
+        "Toire no Hanako-san: Shin Gekijōban (2013)",
+        "Senritsu Kaiki File Kowasugi! File 04: The Truth! Hanako-san in the Toilet (2013)",
+        "Toilet-Bound Hanako-kun (anime, Lerche, 2020)",
+        "Appearances in Ghost Stories (Gakkō no Kaidan), GeGeGe no Kitarō, Kyōkai no Rinne"
+      ],
+      "games": [
+        "Yo-kai Watch (as 'Toiletta' in English localization)",
+        "Spirit Hunter: Death Mark II"
+      ],
+      "music": [],
+      "other": [
+        "Stock figure in Japanese schoolyard storytelling and 'test of courage' games"
+      ]
     }
   },
+
   "research": {
-    "researchers": [],
-    "organizations": [],
-    "ongoing_studies": "None documented"
+    "researchers": [
+      { "name": "Michael Dylan Foster", "affiliation": "University of California, Davis (folklore)", "contribution": "Scholarly treatment of Hanako-san within modern Japanese yokai/urban-legend studies", "period": "2000s–present" },
+      { "name": "Matthew Meyer", "affiliation": "Independent (yokai.com / A-Yokai-A-Day)", "contribution": "Detailed English-language documentation of regional Hanako-san variants", "period": "2010s–present" },
+      { "name": "Komatsu Kazuhiko", "affiliation": "International Research Center for Japanese Studies (Nichibunken)", "contribution": "Systematic scholarship on yokai and modern Japanese supernatural culture", "period": "1980s–present" }
+    ],
+    "organizations": [
+      { "name": "Yokai.com", "url": "https://yokai.com", "focus": "English-language reference on Japanese yokai and urban legends" }
+    ],
+    "ongoing_studies": "Hanako-san is regularly cited in folklore studies of postwar Japanese urban legends, school-based ghostlore, and the global circulation of J-horror tropes."
   },
-  "sources": []
+
+  "sources": [
+    { "id": "wiki-hanakosan", "type": "website", "title": "Hanako-san", "publication": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Hanako-san", "accessed": "2026-05-07" },
+    { "id": "foster-2015", "type": "book", "title": "The Book of Yokai: Mysterious Creatures of Japanese Folklore", "authors": ["Michael Dylan Foster"], "publication": "University of California Press", "date": "2015", "isbn": "978-0520271029" },
+    { "id": "meyer-yokaicom-hanako", "type": "website", "title": "Hanako-san of the toilet", "authors": ["Matthew Meyer"], "publication": "yokai.com", "url": "https://yokai.com/hanakosan/", "accessed": "2026-05-07" }
+  ]
 }
